@@ -1,0 +1,31 @@
+{
+  "name": "blockchain-api-node",
+  "version": "1.0.0",
+  "description": "Blockchain ağı ile etkileşim sağlayan, TypeScript ile güvenli ve ölçeklenebilir merkeziyetsiz uygulamalar için geliştirilmiş bir Node.js API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akdoganalibugra/blockchain-api-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akdoganalibugra/blockchain-api-node/issues"
+  },
+  "homepage": "https://github.com/akdoganalibugra/blockchain-api-node#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@types/node": "^22.3.0",
+    "hardhat": "^2.22.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "web3": "^4.11.1"
+  }
+}
