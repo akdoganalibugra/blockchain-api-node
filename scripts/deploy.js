@@ -34,7 +34,7 @@ const rewardContractJson = JSON.parse(
 const TestToken = new web3.eth.Contract(tokenContractJson.abi);
 const Reward = new web3.eth.Contract(rewardContractJson.abi);
 
-const initialSupply = web3.utils.toWei("1000000", "ether"); // 1 milyon token
+const initialSupply = web3.utils.toWei("1000", "ether"); // Bin token
 
 async function deployTestToken() {
     try {
