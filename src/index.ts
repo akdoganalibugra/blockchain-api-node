@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import healthCheckRouter from "./routes/health-check.routes";
 import rewardRouter from "./routes/reward.routes";
+import { setupSwagger } from "./config/swagger";
 
 dotenv.config();
 
@@ -15,6 +16,9 @@ app.use(cors());
 app.use(express.json());
 // parse urlencoded request body
 app.use(express.urlencoded({ extended: true }));
+
+// setup swagger
+setupSwagger(app);
 
 // routes
 app.use("/api", healthCheckRouter);
