@@ -6,6 +6,12 @@ Daha fazla bilgi için [project-overview.md](project-overview.md) dosyasına gö
 
 > Not: Bu proje test amaçlı olduğundan, varsayılan test `.env` değişkenleri ile birlikte gelmektedir. Kendi ortamınızda projeyi çalıştırmak isterseniz, bu dosyadaki değerleri kendi ihtiyaçlarınıza göre değiştirmeniz gerekmektedir.
 
+### Proje Tanıtım Videosu
+
+Projenin tanıtımına ilişkin videoyu izlemek için aşağıdaki bağlantıya tıklayabilirsiniz:
+
+[Proje Tanıtım Videosu](https://drive.google.com/file/d/1LvqgynWwcqz24HwJ7ugfx1LuBYJTim9k/view?usp=sharing)
+
 ### Projeyi Çalıştırma
 
 Projeyi çalıştırmak için aşağıdaki komutları kullanabilirsiniz:
