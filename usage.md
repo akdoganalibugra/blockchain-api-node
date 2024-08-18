@@ -41,7 +41,6 @@ Hardhat kullanarak akıllı kontratları derleyin ve test ağına dağıtın:
 
 ```sh
 npx hardhat compile
-npx hardhat run scripts/deploy.js --network goerli
 ```
 
 Bu adım, `Reward.sol` ve `TestToken.sol` kontratlarını derleyecek ve Goerli test ağına dağıtacaktır. Dağıtım sonrası kontrat adreslerini not edin.
@@ -124,7 +123,7 @@ Başarısız bir yanıt ise aşağıdaki gibi olacaktır:
 
 ## 10. Testlerin Çalıştırılması
 
-Proje dizininde aşağıdaki komutu çalıştırarak testleri çalıştırabilirsiniz:
+Proje dizininde aşağıdaki komutu çalıştırarak akıllı kontrata ilişkin testleri çalıştırabilirsiniz:
 
 ```sh
 npx hardhat test
