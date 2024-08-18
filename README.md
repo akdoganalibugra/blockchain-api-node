@@ -15,3 +15,7 @@ npm install
 npx hardhat compile
 npm start
 ```
+
+### API Kullanımı
+
+API kullanımına ilişkin detaylı bilgi için [usage.md](usage.md) dosyasına göz atabilirsiniz.
