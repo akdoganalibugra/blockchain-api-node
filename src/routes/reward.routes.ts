@@ -1,11 +1,11 @@
 import express, { Router } from "express";
 import RewardController from "../controllers/rewardController";
 
-const { rewardUsers, getWinners } = RewardController;
+const { rewardTargetAddress, getWinners } = RewardController;
 
 const router: Router = express.Router();
 
-router.post("/reward-users", rewardUsers);
+router.post("/reward-users", rewardTargetAddress);
 
 router.get("/winners", getWinners);
 
