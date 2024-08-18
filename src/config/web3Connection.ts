@@ -26,11 +26,11 @@ class Web3Connection {
 
         const tokenAbiPath = path.resolve(
             __dirname,
-            "../artifacts/contracts/TestToken.sol/TestToken.json"
+            "../../artifacts/contracts/TestToken.sol/TestToken.json"
         );
         const rewardAbiPath = path.resolve(
             __dirname,
-            "../artifacts/contracts/Reward.sol/Reward.json"
+            "../../artifacts/contracts/Reward.sol/Reward.json"
         );
 
         const tokenAbi = JSON.parse(fs.readFileSync(tokenAbiPath, "utf8")).abi;
