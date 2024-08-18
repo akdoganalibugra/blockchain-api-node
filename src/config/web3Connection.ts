@@ -8,11 +8,13 @@ class Web3Connection {
     public web3!: Web3;
     public tokenContract: any;
     public rewardContract: any;
+    public account: any;
     private static instance: Web3Connection;
 
     private constructor() {
         this.initializeWeb3();
         this.initializeContracts();
+        this.initializeAccount();
     }
 
     private initializeWeb3() {
@@ -43,6 +45,12 @@ class Web3Connection {
             rewardAbi,
             rewardAddress
         );
+    }
+
+    private initializeAccount() {
+        const privateKey = process.env.DEPLOYER_PRIVATE_KEY!;
+        this.account = this.web3.eth.accounts.privateKeyToAccount(privateKey);
+        this.web3.eth.accounts.wallet.add(this.account);
     }
 
     public static getInstance(): Web3Connection {
