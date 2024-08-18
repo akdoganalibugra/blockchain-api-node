@@ -76,8 +76,8 @@ async function testRewardContract(rewardContractAddress, tokenContractAddress) {
 }
 
 async function main() {
-    const rewardContractAddress = "0xe57b9cb3eE32820a3727e5895a2BBD3c785eC3E7"; // Mevcut Reward kontrat adresi
-    const tokenContractAddress = "0xea7c272b50BA959BbDb225B97D6717Ead94fa64d"; // Mevcut Token kontrat adresi
+    const rewardContractAddress = "0x21075d6246D649a917C863bDcFD7bfb95957f8d0"; // Mevcut Reward kontrat adresi
+    const tokenContractAddress = "0xf49dd1db97F379A4B8C7d9D5811067318d943852"; // Mevcut Token kontrat adresi
 
     await testRewardContract(rewardContractAddress, tokenContractAddress);
 }
