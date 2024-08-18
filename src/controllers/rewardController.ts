@@ -9,11 +9,10 @@ class RewardController {
         this.rewardService = RewardService.getInstance();
     }
 
-    public rewardUsers = async (req: Request, res: Response) => {
+    public rewardTargetAddress = async (req: Request, res: Response) => {
         try {
             const response = createResponseObject();
-            response.result =
-                await this.rewardService.rewardUsersWithGeneratedAddresses();
+            response.result = await this.rewardService.rewardTargetAddress();
             res.status(200).send(response);
         } catch (error) {
             res.status(500).send(error);
